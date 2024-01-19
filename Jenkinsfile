@@ -37,7 +37,7 @@ stages {
             }
             steps {
                
-                   sh "docker run -t -id --name nodejs -p 3000:80 vjyguvi/projectnode"
+                   sh "docker run -t -id --name nodejs -p 3000:80 vjyguvi/projectnodes"
                     }   
                 }
             }
