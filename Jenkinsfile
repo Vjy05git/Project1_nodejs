@@ -39,7 +39,7 @@ stages {
                script { 
                      withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'dpass', usernameVariable: 'duser')]) {
                    sh "docker login -u \$duser -p \$dpass"      
-                   sh "docker run -t -id --name nodejs -p 3000:80 vjyguvi/projectnodes"
+                   sh "docker run -t -id --name nodejs -p 3000:80 vjyguvi/projectnodejs"
                     }   
                 }
             }
