@@ -36,9 +36,11 @@ stages {
                 }
             }
             steps {
-               
+               script { 
+                     withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'dpass', usernameVariable: 'duser')]) {
                    sh "docker run -t -id --name nodejs -p 3000:80 vjyguvi/projectnodes"
                     }   
                 }
             }
         }
+}
