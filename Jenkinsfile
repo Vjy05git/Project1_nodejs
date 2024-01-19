@@ -31,7 +31,7 @@ stages {
         stage('Deploy') {
             agent {
                 node {
-                    // Specify the name of your Jenkins worker node
+                    
                     label 'nodejs'
                 }
             }
