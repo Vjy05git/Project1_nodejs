@@ -32,7 +32,7 @@ stages {
             agent {
                 node {
                     // Specify the name of your Jenkins worker node
-                    label 'your-worker-node-name'
+                    label 'nodejs'
                 }
             }
             steps {
